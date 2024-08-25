@@ -138,7 +138,6 @@ $desktop: 38em;
     .sidebar {
       background-color: #eee;
       border-radius: 5px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       width: 300px;
     }
   }
@@ -209,16 +208,23 @@ $desktop: 38em;
 //Texts
 .featured_title{
     font-size: 2em;
-    padding: 20px 0;
+    padding: 1.25em 0;
     position: relative;
     &:after{
         background-color: #000;
         border-radius: 5px;
         content: "";
-        height: 4px;
+        height: 0.25em;
         position: absolute;
         left: 0;
-        top: 60px;
-        width: 100px;
+        top: 2.75em;
+        width: 6.25em;
+    }
+    @media(width >= $desktop){
+        &:after{
+            height: 0.15em;
+            top: 2.6em;
+            width: 3em;
+        }
     }
 }
