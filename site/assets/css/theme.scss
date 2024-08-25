@@ -38,6 +38,7 @@ $desktop: 38em;
   @for $i from 1 through $total {
     @media (width >= $desktop) {
       .col-#{$i} {
+        padding: 0.25em;
         width: (100% / $total) * $i;
       }
     }
@@ -131,13 +132,14 @@ $desktop: 38em;
     gap: 0.8em;
     padding: 2em 1em;
     .content {
-      flex-grow: 5;
+      flex-grow: 4;
       min-height: 80em;
     }
     .sidebar {
       background-color: #eee;
       border-radius: 5px;
-      flex-grow: 2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      width: 300px;
     }
   }
 }
@@ -146,7 +148,6 @@ $desktop: 38em;
 .card {
   &_top {
     &--news {
-      background-image: url(https://c4.wallpaperflare.com/wallpaper/297/22/531/lake-blue-moonlight-moon-wallpaper-preview.jpg);
       background-size: cover;
       background-position: center;
       border-radius: 0.5em;
@@ -170,8 +171,8 @@ $desktop: 38em;
           font-weight: 600;
           margin-top: 0.75em;
           padding: 0.5em 1.5em;
-          transition: background-color 0.3s ease, color 0.3s ease;
-
+          text-align: center;
+          transition: background-color 0.3s ease, color 0.3s ease;  
           &:hover {
             background-color: #03a9f4;
             color: #fff;
@@ -203,4 +204,21 @@ $desktop: 38em;
       }
     }
   }
+}
+
+//Texts
+.featured_title{
+    font-size: 2em;
+    padding: 20px 0;
+    position: relative;
+    &:after{
+        background-color: #000;
+        border-radius: 5px;
+        content: "";
+        height: 4px;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 100px;
+    }
 }

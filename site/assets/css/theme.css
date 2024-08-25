@@ -34,61 +34,73 @@
 
 @media (width >= 38em) {
   .col-1 {
+    padding: 0.25em;
     width: 8.3333333333%;
   }
 }
 @media (width >= 38em) {
   .col-2 {
+    padding: 0.25em;
     width: 16.6666666667%;
   }
 }
 @media (width >= 38em) {
   .col-3 {
+    padding: 0.25em;
     width: 25%;
   }
 }
 @media (width >= 38em) {
   .col-4 {
+    padding: 0.25em;
     width: 33.3333333333%;
   }
 }
 @media (width >= 38em) {
   .col-5 {
+    padding: 0.25em;
     width: 41.6666666667%;
   }
 }
 @media (width >= 38em) {
   .col-6 {
+    padding: 0.25em;
     width: 50%;
   }
 }
 @media (width >= 38em) {
   .col-7 {
+    padding: 0.25em;
     width: 58.3333333333%;
   }
 }
 @media (width >= 38em) {
   .col-8 {
+    padding: 0.25em;
     width: 66.6666666667%;
   }
 }
 @media (width >= 38em) {
   .col-9 {
+    padding: 0.25em;
     width: 75%;
   }
 }
 @media (width >= 38em) {
   .col-10 {
+    padding: 0.25em;
     width: 83.3333333333%;
   }
 }
 @media (width >= 38em) {
   .col-11 {
+    padding: 0.25em;
     width: 91.6666666667%;
   }
 }
 @media (width >= 38em) {
   .col-12 {
+    padding: 0.25em;
     width: 100%;
   }
 }
@@ -170,18 +182,18 @@
     padding: 2em 1em;
   }
   .content_container .content {
-    flex-grow: 5;
+    flex-grow: 4;
     min-height: 80em;
   }
   .content_container .sidebar {
     background-color: #eee;
     border-radius: 5px;
-    flex-grow: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
   }
 }
 
 .card_top--news {
-  background-image: url(https://c4.wallpaperflare.com/wallpaper/297/22/531/lake-blue-moonlight-moon-wallpaper-preview.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 0.5em;
@@ -207,6 +219,7 @@
   font-weight: 600;
   margin-top: 0.75em;
   padding: 0.5em 1.5em;
+  text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .card_top--news .text a:hover {
@@ -231,4 +244,20 @@
   .card_top--news .text p {
     font-size: 1.2em;
   }
+}
+
+.featured_title {
+  font-size: 2em;
+  padding: 20px 0;
+  position: relative;
+}
+.featured_title:after {
+  background-color: #000;
+  border-radius: 5px;
+  content: "";
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100px;
 }/*# sourceMappingURL=theme.css.map */
