@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+* a,
+* a:hover {
+  text-decoration: none;
+}
+* li {
+  list-style-type: none;
+}
+* audio,
+* img,
+* iframe,
+* video {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 99%;
+}
+@media (width >= 38em) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (width >= 38em) {
+  .col-1 {
+    width: 8.3333333333%;
+  }
+}
+@media (width >= 38em) {
+  .col-2 {
+    width: 16.6666666667%;
+  }
+}
+@media (width >= 38em) {
+  .col-3 {
+    width: 25%;
+  }
+}
+@media (width >= 38em) {
+  .col-4 {
+    width: 33.3333333333%;
+  }
+}
+@media (width >= 38em) {
+  .col-5 {
+    width: 41.6666666667%;
+  }
+}
+@media (width >= 38em) {
+  .col-6 {
+    width: 50%;
+  }
+}
+@media (width >= 38em) {
+  .col-7 {
+    width: 58.3333333333%;
+  }
+}
+@media (width >= 38em) {
+  .col-8 {
+    width: 66.6666666667%;
+  }
+}
+@media (width >= 38em) {
+  .col-9 {
+    width: 75%;
+  }
+}
+@media (width >= 38em) {
+  .col-10 {
+    width: 83.3333333333%;
+  }
+}
+@media (width >= 38em) {
+  .col-11 {
+    width: 91.6666666667%;
+  }
+}
+@media (width >= 38em) {
+  .col-12 {
+    width: 100%;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (width >= 38em) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.header_container-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 1em;
+}
+.header_container-logo .banner {
+  background-color: red;
+  flex-grow: 2;
+  min-height: 5em;
+}
+.header_container-logo .logo {
+  flex-grow: 1;
+}
+.header_container-logo .logo a {
+  color: #333;
+}
+.header_container-menu {
+  background-color: #222;
+}
+.header_container-menu .links_container {
+  display: none;
+  padding: 0.85em 1em;
+}
+.header_container-menu .links_container .links {
+  display: flex;
+}
+.header_container-menu .links_container .links li a {
+  color: #fff;
+  font-weight: 600;
+}
+@media (width >= 38em) {
+  .header_container-logo {
+    padding: 1em;
+  }
+  .header_container-logo .banner {
+    flex-grow: 3;
+    min-height: 5em;
+  }
+  .header_container-logo .logo {
+    flex-grow: 1;
+  }
+  .header_container-logo .logo a {
+    font-size: 3em;
+  }
+  .header_container-menu .links_container {
+    display: block;
+  }
+  .header_container-menu .links_container .links {
+    flex-direction: row;
+    gap: 0.96em;
+  }
+  .header_container-menu .links_container .links li a {
+    font-size: 0.9em;
+  }
+}
+
+.content_container {
+  display: flex;
+  flex-direction: column;
+}
+@media (width >= 38em) {
+  .content_container {
+    flex-direction: row;
+    gap: 0.8em;
+    padding: 2em 1em;
+  }
+  .content_container .content {
+    flex-grow: 5;
+    min-height: 80em;
+  }
+  .content_container .sidebar {
+    background-color: #eee;
+    border-radius: 5px;
+    flex-grow: 2;
+  }
+}
+
+.card_top--news {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/297/22/531/lake-blue-moonlight-moon-wallpaper-preview.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  -o-border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.0666666667), #000);
+     border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.0666666667), #000);
+  overflow: hidden;
+}
+.card_top--news .text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 20em;
+  padding: 1.5em;
+}
+.card_top--news .text a {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 0.25em;
+  color: #000;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 0.75em;
+  padding: 0.5em 1.5em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.card_top--news .text a:hover {
+  background-color: #03a9f4;
+  color: #fff;
+}
+.card_top--news .text h2 {
+  font-size: 2em;
+}
+@media (min-width: 38em) {
+  .card_top--news .text {
+    min-height: 25em;
+    padding: 2em;
+  }
+  .card_top--news .text a {
+    font-size: 1.4em;
+    padding: 0.4em 2em;
+  }
+  .card_top--news .text h2 {
+    font-size: 1.8em;
+  }
+  .card_top--news .text p {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=theme.css.map */
